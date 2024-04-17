@@ -18,8 +18,6 @@ error_ab2 = sum(bb(pos(3,:),:).*nab(pos(3,:),:),'all') - sum(bb(pos(4,:),:),'all
 w(end+1) = -error_ab1;
 w(end+1) = -error_ab2;
 
-%[ w1 ] = w_bulider( m,w(1:end-2),m_not,z1b,z2b,b_in );
-
 % Solve for the coefficients b
 b = A\w;
 end
