@@ -1,6 +1,4 @@
 function [tau_12] = tau_12_frac(z,z1,z2,L,m,beta,mu,g,rho,rho_w,k,Omega_w_func)
-%Tau 11 for uniform seepage flow in a half-space
-%   Detailed explanation goes here
 
 % Getting the chi- and Z-coordinates
 chi = chi_from_z(z,z1,z2);

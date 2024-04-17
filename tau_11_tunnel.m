@@ -1,6 +1,5 @@
 function [tau_11] = tau_11_tunnel(z,rt,zt,a,b)
-%Tau 11 for uniform seepage flow in a half-space
-%   Detailed explanation goes here
+
 Z = bigz_from_z(z,rt,zt);
 if Z*conj(Z) < 1-1e-12
     tau_11 = complex(NaN,NaN);

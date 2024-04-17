@@ -1,6 +1,4 @@
 function [w] = w_disp(z,z1,z2,L,m,beta,mu,sigma_11,z1b,z2b,b,alpha,W_uni,gamma_w,k,kappa,G,nu)
-%w for uniform seepage flow in a half-space
-%   Detailed explanation goes here
 wf = complex(0,0);
 for ii = 1:length(z1)
     wf = wf + w_frac(z,z1(ii),z2(ii),L(ii),m,beta(ii,:),mu(ii),kappa,G);

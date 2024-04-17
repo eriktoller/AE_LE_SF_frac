@@ -19,16 +19,13 @@ for nu=1:N
         for j=1:m+1
             mu=j-1;
             Om = Omega(z,g,rho,rho_w,k,Omega_w_func);
-%             Int(nu,j)=(real(T) - .5i*(Om + conj(Om)))*exp(-1i*mu*theta);
             Int(nu,j)=real(T)*exp(-1i*mu*theta);
         end
     else
         for j=1:m+1
             mu=j-1;
-            Int(nu,j)=imag(T)*exp(-1i*mu*theta);
             Om = Omega(z,g,rho,rho_w,k,Omega_w_func);
-            OO(nu,j) = real(Om)*exp(-1i*mu*theta);
-            Int(nu,j)=(-imag(T) - .5*(Om + conj(Om)))*exp(-1i*mu*theta); %CORRECT
+            Int(nu,j)=(-imag(T) - .5*(Om + conj(Om)))*exp(-1i*mu*theta);
         end
     end
 end

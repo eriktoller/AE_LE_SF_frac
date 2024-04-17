@@ -14,7 +14,6 @@ for nu=1:N
     chi=exp(1i*theta);
     z=z_of_chi(chi);
     Omega=Omega_of_z(z);
-%     Delta_Omega = Omega - imag(z-zt)*k;
     Delta_Omega = Omega - sin(theta)*rt*k;
     for j=1:m+1
         mu=j-1;
