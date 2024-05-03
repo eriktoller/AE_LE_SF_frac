@@ -63,9 +63,9 @@ plot(p)
 th = linspace(0,2*pi,100);
 create_figure_axis
 plot(th,real(SF(1:100)),'-','Color',[.2 .5 0])
-plot(th,-SFXC(1:100),'--','Color',[.2 .5 0 ])
+plot(th,SFXC(1:100),'--','Color',[.2 .5 0 ])
 plot(th,-imag(SF(1:100)),'-','Color',[.5 0 .5])
-plot(th,-SFYC(1:100),'--','Color',[.5 0 .5])
+plot(th,SFYC(1:100),'--','Color',[.5 0 .5])
 legend('$s_{x,AEM}$','$s_{x,COMSOL}$','$s_{y,AEM}$','$s_{y,COMSOL}$','Location','southwest')
 xticks([0, pi/2, pi, 3*pi/2, 2*pi])
 xticklabels({'$0$','$\frac{\pi}{2}$', '$\pi$', '$\frac{3\pi}{2}$', '$2\pi$' })

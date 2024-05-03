@@ -5,7 +5,7 @@
 %   2023-10-13
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-close all
+%close all
 clearvars
 clc
 figure_font
